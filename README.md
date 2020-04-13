@@ -1,42 +1,44 @@
 # itemFinder
 
-һ����������������ȫ��Ʒ�в����ض���Ʒλ�õĲ��
+一个方便服务器玩家在全物品中查找特定物品位置的插件
 
-��֧�� [MCDReforged](https://github.com/Fallen-Breath/MCDReforged)
+仅支持 [MCDReforged](https://github.com/Fallen-Breath/MCDReforged)
 
-֧�־�ȷ������ģ������
+支持精确搜索与模糊搜索
 
-֧����Ӣ��
+支持中英文
+
+支持官方/常用名搜索
 
 
-# ��ʽ˵��
+# 格式说明
 
-`!!find` ��ʾ������Ϣ
+`!!find` 显示帮助信息
 
-`!!find ��Ʒ��` ���Ҷ�Ӧ��Ʒλ��[δ��ѯ���Զ�ģ����ѯ]
+`!!find 物品名` 查找对应物品位置[未查询到自动模糊查询]
 
-`!!find ��Ʒ�� -d` ģ����ѯ
+`!!find 物品名 -d` 模糊查询
 
-# �����ļ�
+# 配置文件
 
-�ٷ��� ������1|������2|...|������n x y z
+官方名 常用名1|常用名2|...|常用名n x y z
 
-���磺
+例如：
 
-`��ϻ�ľ��ʾ�� �Ͻ�ľ��ʾ��|��ϻ���ʾ��|�Ͻ𻶸�ʾ�� -1556 41 -62`
+`金合欢木告示牌 合金欢木告示牌|金合欢告示牌|合金欢告示牌 -1556 41 -62`
 
-`���ʲ���ѹ���� light_weighted_pressure_plate|��ѹ����|�����ѹ���� -1595 41 -85`
+`轻质测重压力板 light_weighted_pressure_plate|金压力板|金测重压力板 -1595 41 -85`
 
-�����ļ�Ŀ¼ `MCDR/config/itemFinder.json`
+配置文件目录 `MCDR/config/itemFinder.json`
 
-# ʹ��ʾ��
+# 使用示例
 
-`!!find ��ѹ����`
+`!!find 金压力板`
 
-`!!find ѹ���� -d`
+`!!find 压力板 -d`
 
-# ���ʾ��
+# 输出示例
 
-`���ʲ���ѹ������[x:-1595,y:40,z:-85,dim:0]`
+`轻质测重压力板在[x:-1595,y:40,z:-85,dim:0]`
 
-����������С��ͼ����ʾ
+点击坐标可在小地图内显示
